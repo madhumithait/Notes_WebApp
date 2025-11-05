@@ -7,7 +7,7 @@ export default function App() {
   const [notes, setNotes] = useState([]);
   const [editingNote, setEditingNote] = useState(null);
 
-  // Create
+  
   function addNote(note) {
     const newNote = {
       id: Date.now(),
@@ -17,15 +17,15 @@ export default function App() {
     setNotes(prev => [newNote, ...prev]);
   }
 
-  // Read is handled by passing notes to NoteList
+  
 
-  // Update
+  
   function updateNote(updated) {
     setNotes(prev => prev.map(n => (n.id === updated.id ? updated : n)));
     setEditingNote(null);
   }
 
-  // Delete
+  
   function deleteNote(id) {
     setNotes(prev => prev.filter(n => n.id !== id));
     if (editingNote && editingNote.id === id) {
