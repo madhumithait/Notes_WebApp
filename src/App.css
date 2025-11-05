@@ -1,0 +1,154 @@
+.app-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* NoteForm */
+.note-form {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(16,24,40,0.06);
+}
+
+.form-heading {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px 10px;
+  border: 1px solid #e6edf3;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fbfdff;
+  color: #0f172a;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+/* actions */
+.form-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #0ea5a4;
+  color: white;
+}
+
+.btn-secondary {
+  background: #e6eef0;
+  color: #0f172a;
+}
+
+.btn.small {
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+.btn.danger {
+  background: #ef4444;
+  color: #fff;
+}
+
+/* NoteList */
+.note-list {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(16,24,40,0.06);
+}
+
+.list-heading {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.no-notes {
+  color: #64748b;
+  padding: 20px;
+  text-align: center;
+}
+
+/* notes grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+/* NoteItem */
+.note-item {
+  border: 1px solid #eef2f6;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fcffff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 8px;
+}
+
+.note-title {
+  font-size: 16px;
+  margin: 0;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+.note-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.note-content {
+  font-size: 14px;
+  color: #334155;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
